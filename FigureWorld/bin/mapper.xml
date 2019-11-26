@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.mysql.mapper">
+
+	<!-- 중복확인 -->
+	<select id="SelectOverlap" resultType="Integer"
+		parameterType="String">
+		SELECT COUNT(*) FROM user
+		WHERE ID = #{ID}
+	</select>
+
+	<!-- 회원가입 -->
+	<insert id="InsertUser" parameterType="ModelUser">
+		INSERT INTO
+		user ( NAME ,
+		Rating , ID , PW , PW_Check1, PW_Check2 , Postal_code,
+		Old_addr,
+		New_addr, Detail_addr, phone, Email, Email_Check, Birth,
+		POINT,
+		SignUp_Date)
+		VALUES
+		(#{NAME},#{Rating},#{ID},#{PW},#{PW_Check1},#{PW_Check2},
+		#{Postal_code}, #{Old_addr}, #{New_addr}, #{Detail_addr},#{phone},
+		#{Email}, #{Email_Check}, #{Birth}, 0, NOW()
+		)
+	</insert>
+
+	<!-- 비밀번호 가져오기 -->
+	<select id="SelectPW" resultType="ModelUser"
+		parameterType="ModelUser">
+		SELECT PW FROM user
+		WHERE ID = #{ID}
+	</select>
+
+	<!-- 로그인 -->
+	<select id="Connectivity" resultType="ModelUser"
+		parameterType="ModelUser">
+		SELECT User_NM, NAME, RATING, ID FROM user
+		WHERE ID =
+		#{ID}
+	</select>
+
+	<!-- 로그인 / 로그아웃 로그 기록 -->
+	<insert id="Login_log" parameterType="ModelLogin_Log">
+		INSERT INTO Login_Log
+		VALUES(#{User_NM}, #{IP}, now(), #{Log_InOut})
+	</insert>
+
+	<!-- 문의사항 갯수 -->
+	<select id="QuestionsCount" resultType="Integer"
+		parameterType="hashmap">
+		SELECT COUNT(*) FROM questions AS q JOIN user AS u
+		ON q.User_NM =
+		u.User_NM
+		WHERE 1=1
+		<choose>
+			<when test="Search.size != 0">
+				AND
+				<if test="Options == 'Title' "> <!-- 제목으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Title LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'Questions_Content' "> <!-- 내용으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Questions_Content LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'User_NM' "> <!-- 이름으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						u.NAME LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'All' "> <!-- 모두 동시 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Title LIKE '%${item}%' or
+						q.Questions_Content LIKE
+						'%${item}%' or
+						u.NAME LIKE '%${item}%'
+					</foreach>
+				</if>
+			</when>
+		</choose>
+	</select>
+
+	<!-- 문의사항 리스트 -->
+	<select id="QuestionsList" resultType="Map"
+		parameterType="hashmap">
+		SELECT q.Questions_NM, q.User_NM, Title, q.Questions_Content,
+		q.Secret, q.BoadrWriting_Time, q.Inquiry_Index, u.NAME
+		FROM questions
+		AS q JOIN user AS u
+		ON q.User_NM = u.User_NM
+		WHERE 1=1
+		<choose>
+			<when test="Search.size != 0">
+				AND
+				<if test="Options == 'Title' "> <!-- 제목으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Title LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'Questions_Content' "> <!-- 내용으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Questions_Content LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'User_NM' "> <!-- 이름으로 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						u.NAME LIKE '%${item}%'
+					</foreach>
+				</if>
+				<if test="Options == 'All' "> <!-- 모두 동시 검색시 -->
+					<foreach collection="Search" item="item" index="index"
+						separator="or">
+						q.Title LIKE '%${item}%' or
+						q.Questions_Content LIKE
+						'%${item}%' or
+						u.NAME LIKE '%${item}%'
+					</foreach>
+				</if>
+			</when>
+		</choose>
+		ORDER BY q.Questions_NM DESC
+		LIMIT #{Contentnum} OFFSET #{Pagenum} <!-- Pagenum 페이지넘버(num*10) / Contentnum 몇개보여줄건지 -->
+	</select>
+
+	<!-- 문의사항 답변 게시글 리스트 -->
+	<select id="AnswerList" resultType="Map" parameterType="hashmap">
+		SELECT a.Manager_Answer_NM, a.Questions_NM, a.Answer_Content,
+		a.Writing_Time, u.NAME
+		FROM manager_answer AS a JOIN user AS u
+		ON
+		a.User_NM = u.User_NM
+		WHERE a.Questions_NM IN
+		<foreach item="item" index="index" collection="list" open="("
+			separator="," close=")">
+			#{item.Questions_NM}
+		</foreach>
+		ORDER BY a.Questions_NM DESC
+	</select>
+
+	<!-- 문의사항 답변 상세정보 -->
+	<select id="AnswerInfo" resultType="Map" parameterType="Integer">
+		SELECT
+		a.Manager_Answer_NM, a.Questions_NM, a.Answer_Content, a.Writing_Time,
+		u.NAME
+		FROM manager_answer AS a JOIN user AS u
+		ON a.User_NM = u.User_NM
+		WHERE a.Questions_NM = #{Questions_NM}
+	</select>
+
+
+	<!-- 문의게시글 작성 -->
+	<insert id="InsertQuestions" parameterType="ModelQuestions">
+		INSERT INTO
+		questions
+		(User_NM, Title, Questions_Content, Secret, BoadrWriting_Time,
+		BoadrUpdate_Time, Inquiry_Index)
+		VALUES (#{User_NM}, #{Title},
+		#{Questions_Content}, #{Secret}, NOW(), NOW(), 0)
+	</insert>
+
+	<!-- 문의게시글 조회수 증가 -->
+	<update id="InquiryUp" parameterType="Integer">
+		UPDATE questions SET
+		Inquiry_Index = Inquiry_Index + 1
+		WHERE Questions_NM = #{Questions_NM}
+	</update>
+
+	<!-- 게시글 상세보기 조회 -->
+	<select id="SelectQuestions" resultType="ModelQuestions">
+		SELECT * FROM questions
+		WHERE Questions_NM = #{Questions_NM}
+	</select>
+
+	<!-- 게시글 업데이트 -->
+	<update id="QuestionsUpdate" parameterType="ModelQuestions">
+		UPDATE questions
+		SET
+		Title = #{Title}, Questions_Content = #{Questions_Content}, Secret =
+		#{Secret}, BoadrUpdate_Time = NOW()
+		WHERE Questions_NM =
+		#{Questions_NM}
+	</update>
+
+	<!-- 게시글 삭제 -->
+	<delete id="QuestionsDelete" parameterType="ModelQuestions">
+		DELETE FROM questions
+		WHERE Questions_NM = #{Questions_NM}
+	</delete>
+
+	<!-- 게시글 답변 작성 -->
+	<insert id="InsertAnswer" parameterType="ModelAnswer">
+		INSERT INTO
+		manager_answer VALUES(NULL, #{Questions_NM}, #{User_NM},
+		#{Answer_Content}, NOW())
+	</insert>
+
+	<!-- 제품 검색정보 리스트 -->
+	<select id="ProductList" parameterType="ModelProduct"
+		resultType="ModelProduct">
+		SELECT Product_NM, Product_Group, Product_Name, Price,
+		Title_Img, Product_Star FROM product
+		WHERE Product_Group LIKE
+		'%${Product_Group}%' OR Product_Name LIKE
+		'%${Product_Name}%'
+		ORDER BY
+		Product_NM DESC
+	</select>
+
+	<!-- 제품 상세정보 -->
+	<select id="SelectProduct" parameterType="ModelProduct"
+		resultType="ModelProduct">
+		SELECT Product_NM, Product_Group, Product_Name, Price,
+		Detail, Stock, Product_Star, Title_Img, Info_Img, Product_Date FROM
+		Product
+		WHERE Product_NM = #{Product_NM}
+	</select>
+
+	<!-- 제품 관련 정보 -->
+	<select id="RelevantProduct" parameterType="ModelProduct"
+		resultType="ModelProduct">
+		SELECT Product_NM, Product_Group, Product_Name, Price,
+		Stock, Title_Img FROM Product
+		WHERE Stock > 0 AND Product_Group =
+		(SELECT Product_Group FROM Product WHERE Product_NM = #{Product_NM})
+		AND Product_NM != #{Product_NM}
+		ORDER BY Product_NM ASC
+		LIMIT 5 OFFSET 0
+	</select>
+
+	<!-- 장바구니에 물건 담기 -->
+	<insert id="InsertBasket" parameterType="ModelShopping_Basket">
+		INSERT INTO
+		Shopping_Basket (User_NM, Product_NM, Quantity, Purchase)
+		VALUES(#{User_NM}, #{Product_NM}, #{Quantity}, '대기')
+	</insert>
+
+	<!-- 장바구니 목록 가져오기 -->
+	<select id="SelectBasket" resultType="Map"
+		parameterType="Integer">
+		SELECT p.Product_NM, p.Product_Group, p.Product_Name,
+		p.Price, p.Detail, p.Stock, p.Title_Img, sb.Basket_NM, sb.Quantity
+		FROM Product AS p JOIN Shopping_Basket AS sb
+		ON p.Product_NM =
+		sb.Product_NM
+		WHERE sb.User_NM = #{User_NM} AND Purchase = '대기'
+	</select>
+
+	<!-- 장바구니 삭제 -->
+	<delete id="DeleteBasket" parameterType="Integer">
+		DELETE FROM
+		Shopping_Basket WHERE Basket_NM = #{Basket_NM}
+	</delete>
+	
+	<!-- 장바구니  제품 수량변경-->
+	<update id="UpdateQuantity" parameterType="ModelShopping_Basket">
+		UPDATE Shopping_Basket
+		SET Quantity = #{Quantity}
+		WHERE Basket_NM = #{Basket_NM}
+	</update>
+
+
+	<!-- 장바구니 구매하기 -->
+	<insert id="InsertAllOrder" parameterType="Integer">
+		INSERT INTO Purchase_Details (User_NM, Product_NM, Payment_Amount,
+		Purchase_Quantity, Purchase_Date, Bereleased_Date)
+		VALUES
+		<foreach item="item" collection="list" separator=",">
+			((SELECT User_NM FROM Shopping_Basket WHERE Basket_NM = #{item}),
+			(SELECT Product_NM FROM Shopping_Basket WHERE Basket_NM = #{item}),
+			(SELECT Price FROM product WHERE Product_NM = (SELECT Product_NM FROM Shopping_Basket WHERE Basket_NM = #{item}))
+			*
+			(SELECT Quantity FROM Shopping_Basket WHERE Basket_NM = #{item}),
+			(SELECT Quantity FROM Shopping_Basket WHERE Basket_NM = #{item}),
+			CURDATE(), CURDATE()+1)
+		</foreach>
+	</insert>
+
+	<!-- 장바구니에 있는 구매목록 업데이트 -->
+	<update id="UpdateAllOrder" parameterType="java.util.List">
+		<foreach item="item" collection="list" separator=";" index="index">
+			UPDATE Shopping_Basket 
+			SET Purchase = '구매'
+			WHERE 
+			Basket_NM = #{item}
+		</foreach>
+	</update>
+	
+	<!-- 구매로 인한 재고 하락 업데이트 -->
+	<update id="UpdateStock" parameterType="java.util.List">
+		<foreach item="item" collection="list" separator=";" index="index">
+			UPDATE Product
+			SET Stock = Stock - (SELECT Quantity FROM Shopping_Basket WHERE Basket_NM = #{item})
+			WHERE Product_NM = (SELECT Product_NM FROM Shopping_Basket WHERE Basket_NM = #{item})
+		</foreach>
+	</update>
+	
+	<!-- 구매내역 -->
+	<select id="SelectMyShopping" parameterType="Integer" resultType="Map">
+		SELECT pd.Payment_Amount, pd.Purchase_Quantity, pd.Purchase_Date, pd.Bereleased_Date, p.Product_NM, p.Product_Group, p.Product_Name, p.Title_Img
+		FROM purchase_details as pd JOIN Product as p
+		ON pd.Product_NM = p.Product_NM
+		WHERE pd.User_NM = #{User_NM}
+		ORDER BY pd.Order_NM DESC
+	</select>
+	
+</mapper>
+

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container" exported="true"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8" exported="true"/>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.9.RELEASE/cceb1cfcbdd9f1f25449c563a884c0f440aa1379/spring-beans-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.9.RELEASE/ad15dfeb48d0127e424f1a3c0d15e4c81a5dc2b7/spring-beans-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.9.RELEASE/44a55eb1d2dc0368c0d3d65461f6afd54bf851bd/spring-context-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.9.RELEASE/dc298a04dacbab233c7eceee06b04f69d363404/spring-context-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.9.RELEASE/d782e5e172bd9676f30e827c6937206a7972bbe8/spring-context-support-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.1.9.RELEASE/460a424533da7dabcc87d42958e28762addd829b/spring-context-support-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.9.RELEASE/81af68a3e493b67b592bff4c6f4d2af7585af861/spring-webmvc-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.9.RELEASE/c065cad2a8f2c6efa0cc14e17d0d4e71c5270e75/spring-webmvc-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d0ec374812e0127ba1a44cbf27f99c813cc28128/spring-orm-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.1.9.RELEASE/d681430cfd81d6cd0e3c1cd5b6e08a1e4dd338ab/spring-orm-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.9.RELEASE/767ac38a8108d83c434baa4b33c4b4497e5d8a5b/spring-core-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.9.RELEASE/85a6d6031c4193d873144496e865b649a874cc47/spring-core-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.9.RELEASE/2865d76b14001639fc95f8bd4321ba92a701dba/spring-expression-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.9.RELEASE/3f91ba075fe46a82b7d521f3eb547a480961f10c/spring-expression-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.9.RELEASE/9284a7279c6cddb55bb0683e9d957cabde810f5/spring-aop-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.9.RELEASE/dd9f5c36a7f6482e43e6fd3cd625fd61d5308a17/spring-aop-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/571f5e0c0dd528dc74e0172e41a25d0e25082b67/spring-jdbc-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.1.9.RELEASE/fa3e6e85ffe54d386371118d8aaac3217ae742e5/spring-jdbc-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/9ec13a13dc78f5664cc7958a952a73ee8e76af4f/spring-tx-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.1.9.RELEASE/2b18a75d2d1652d54355a56484cfc29bbde39750/spring-tx-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.1.9.RELEASE/5191402c3b73122eeae1ae6ab48d8e6e78aebe23/spring-websocket-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.1.9.RELEASE/64fd599f033bbdabafc3bec0443abee4f7e792af/spring-websocket-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.1.9.RELEASE/884f2f217aa0e14252288d156598ff9576ab7640/spring-messaging-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.1.9.RELEASE/3a5e1f1049b3650249342cbf674ec97228ac5f75/spring-messaging-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/3.2.8.RELEASE/8a48b79699d9a37b28c13c7e4296383b1e37609b/spring-security-core-3.2.8.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/3.2.8.RELEASE/36028a35ca93f504dfc2484dc12e5b00a42bc54b/spring-security-core-3.2.8.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/3.2.8.RELEASE/58c0b67f61d2bb07fb6ef51c5f564bc37601228c/spring-security-web-3.2.8.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/3.2.8.RELEASE/55f8d16b6fdfad43eb43e0c3f8b3a269c1997d79/spring-security-web-3.2.8.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/3.2.8.RELEASE/ca296b5244d295b1bfbde22ce7faa0e0ee8ebf09/spring-security-config-3.2.8.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/3.2.8.RELEASE/8802c9514f4e1e65ab1550613b269db1eec900ef/spring-security-config-3.2.8.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-js/2.4.1.RELEASE/72792b2f0c0394b3ac06e29f9d75c0e726ec1392/spring-js-2.4.1.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-js/2.4.1.RELEASE/892631501abc10f859fe2352cf75b94dde3a3d43/spring-js-2.4.1.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-webflow/2.4.1.RELEASE/485780eb3499b34be164d8bd0b1814b214ed108/spring-webflow-2.4.1.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-webflow/2.4.1.RELEASE/206bd1b260f35b4221b10131fbfdb02dcf74340/spring-webflow-2.4.1.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-api/3.0.5/5a8a7f0eff9e40e11008809cc90492760b1b8052/tiles-api-3.0.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-api/3.0.5/7f0d9bdb153119b45a0f9ec3aa70767c7f2183bd/tiles-api-3.0.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-core/3.0.5/e7257d10189bd8e205982abf2ebf58d93645756/tiles-core-3.0.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-core/3.0.5/8f38e1390dac6bd01dc6f709058fcc796821a789/tiles-core-3.0.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-jsp/3.0.5/6844ed700914ed920599f1dbbcc50bf6fa14ae45/tiles-jsp-3.0.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-jsp/3.0.5/cd2bbacf58986dcb4b34059878f48d1fb49f8204/tiles-jsp-3.0.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/opensymphony/sitemesh/2.4.2/4cb3b08c96553b0f4595a80917838ca302f67f3f/sitemesh-2.4.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/b49dafc9cfef24c356827f322e773e7c26725dd2/commons-lang3-3.4-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.0/465e32384b7666ca4f5d1e63637f277425ccc618/commons-dbcp2-2.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.0/49129daea0bf54feef21e6aa2e51b2ead8863261/commons-dbcp2-2.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/af4d76be0c46ee26b0d9d1d4a34d244a633cac84/httpclient-4.3.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.1/6e6c4141f6d96e57fd48df5d398a122226ef92d7/log4j-core-2.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.1/31823dcde108f2ea4a5801d1acc77869d7696533/log4j-core-2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/9376f5559455b8fe1b15308d3ad9c545f6905b1a/commons-pool-1.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-pool/commons-pool/1.6/4572d589699f09d866a226a14b7f4323c6d8f040/commons-pool-1.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.2/53746de93a0b30f346c082074a40c01a6cebdfa7/commons-beanutils-1.9.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.2/7a87d845ad3a155297e8f67d9008f4c1e5656b71/commons-beanutils-1.9.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.2.1/eded3ff1ed6dff680af4a8c31a5a187536aed126/commons-fileupload-1.2.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.2.1/384faa82e193d4e4b0546059ca09572654bc3970/commons-fileupload-1.2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.6/4cc5b7ac5c2c314fbb00c76bd2924c75f7c1ca5d/aspectjrt-1.8.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.6/a7db7ea5f7bb18a1cbd9f24edd0e666504800be/aspectjrt-1.8.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjtools/1.8.6/e989d42ac28657db0b66c59cc44d2db9ed934d65/aspectjtools-1.8.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjtools/1.8.6/16732c1a7a16b8563812e8aec77500550901c37/aspectjtools-1.8.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0.2/eb8ae77be88577b23e64ce1e5386e874b08b49cc/persistence-api-1.0.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0.2/8a7f96961047da52a53b7347b6a919c6fbc6d7fa/persistence-api-1.0.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/2f5877ef15adb721421e80f5aa2b6fe069eec8ed/jstl-1.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp.jstl/jstl-api/1.2/b7b976db29290621db582b38c1db9c22ff439f89/jstl-api-1.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp.jstl/jstl-api/1.2/f9a034c1ca1f79c03bb461805a688f944544d138/jstl-api-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/taglibs/standard/1.1.2/df8e0d90d896837d12eebaf7abf7bcf07ad0f4e4/standard-1.1.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/taglibs/standard/1.1.2/a17e8a4d9a1f7fcc5eed606721c9ed6b7f18acf7/standard-1.1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2.2/fc1558bebc50419cdb55fbffd81c290e21f058c1/cglib-nodep-2.2.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2.2/d456bb230c70c0b95c76fb28e429d42f275941/cglib-nodep-2.2.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.9/c2b49a585e2f433c95cec359a75e0ee4366a1e35/slf4j-api-1.7.9-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.9/872ec63b41181e29ad5a3723f1417356e2d2c0f2/slf4j-api-1.7.9.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.googlecode.log4jdbc/log4jdbc/1.2/3d15013ac6898c8efc312ac4523e3d22758cc3a7/log4jdbc-1.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.googlecode.log4jdbc/log4jdbc/1.2/ba3acb0b14ab0c132de306336c60cb2f086d57a0/log4jdbc-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.34/64e03e460ecc5fde40a83d9ec031923f20625e67/mysql-connector-java-5.1.34-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.34/46deba4adbdb4967367b013cbc67b7f7373da60a/mysql-connector-java-5.1.34.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.2.8/287bc9f8485a85211d7a900fe43c74264ee0561b/mybatis-3.2.8-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.2.8/7b6bf82cea13570b5290d6ed841283a1fcce170/mybatis-3.2.8.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.2.2/37d4385e146df3794aab4f773ac709e6cb83517d/mybatis-spring-1.2.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.2.2/1e40a7f5373e4242075a1d386817e7dd49b1697d/mybatis-spring-1.2.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.2.20.Final/ecfe7460ed86bf9344a1f4fef00a86aa119f0cf3/hibernate-core-4.2.20.Final-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.2.20.Final/d993b24ce6f66497c2362b4955d8c4fa21ea607d/hibernate-core-4.2.20.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/4.2.20.Final/df1ca7cdcf8350ce96d074609e62acdb3b7b9e11/hibernate-entitymanager-4.2.20.Final-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/4.2.20.Final/5d4bf5ca13ea3c8744ba4f8c70b5f5dbb728b337/hibernate-entitymanager-4.2.20.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/574f65373b46a038332eb1a14acc3142bd9e9810/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.3/b783d347815471821faaa7ae7a4f0d2fec30966e/jsoup-1.7.3-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.3/92568d7167ce1bf9eb1fd815b022d5a2c113547a/jsoup-1.7.3.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.json/json/20140107/f53f91bc9c21fef71745450dea5200e423e38370/json-20140107-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.json/json/20140107/d1ffca6e2482b002702c6a576166fd685e3370e3/json-20140107.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.21/4a6b65fd5ad1c37cfdff66dd3fca3eb2d484e3f9/freemarker-2.3.21-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.21/6c2d24aca63fadba2c99fb65218769cfb11099f4/freemarker-2.3.21.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/9c8493c7991464839b612d7547d6c263adf08f75/guava-20.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.7/1fc633cf2a3f5a1767ef28b81ebc5d0ecfa1ffda/joda-time-2.7-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.7/5599707a3eaad13e889f691b3af78c8c03842195/joda-time-2.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/bb76e5678cdb3e7488bb5578a8461e82fba5fe36/mail-1.4.7-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/9add058589d5d85adeb625859bf2c5eeaaedf12d/mail-1.4.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.dbunit/dbunit/2.4.9/202e5e26cf1363b10b73d8370949894dbb70a87c/dbunit-2.4.9-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.dbunit/dbunit/2.4.9/29e9cfe5570a39791450af0e7c2f845f621605e1/dbunit-2.4.9.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.android/android/4.1.1.4/d0b222ba86f4143dd837ece95f84f0cf220dd737/android-4.1.1.4-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.android/android/4.1.1.4/3fb039385e71e9aa2ba547ea9ea8caa34a4ffac7/android-4.1.1.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.android.gcm/gcm-server/1.0.2/8cee4b474482d1f78557451567fedf4c39596fda/gcm-server-1.0.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.google.android.gcm/gcm-server/1.0.2/10a1c27fc76ded608656efed121726df4f0ca192/gcm-server-1.0.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.1.9.RELEASE/d7c7cb4934098a6e0344964d561081692012658b/spring-aspects-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.1.9.RELEASE/d226c17752b16301c80d8dabf3666e29a392b9ef/spring-aspects-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.9/3fc5d2c49a1d149b05b9318f83c33b59cf70e311/slf4j-log4j12-1.7.9-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.9/5586044ba34544a9318bd7508f738dc967cd5e99/slf4j-log4j12-1.7.9.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.9/ff77ddb78d930ef9eeb930591262dadbeec71e36/jcl-over-slf4j-1.7.9-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.9/f7c71870af3c344108412b745c8d13f5defffab5/jcl-over-slf4j-1.7.9.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/javax.servlet.jsp-api/2.3.1/5aa9e2bf86d7a7d56cc24690b87ff29c1a1d2245/javax.servlet.jsp-api-2.3.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/javax.servlet.jsp-api/2.3.1/95c630902565feda8155eb32d46064ef348435fc/javax.servlet.jsp-api-2.3.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-servlet-api/8.5.46/b0ab5d76eed73547d9bdcd938185946521241ca0/tomcat-servlet-api-8.5.46-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-servlet-api/8.5.46/8b224433a27a70f5d8613431e972dcf3e96d1237/tomcat-servlet-api-8.5.46.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.1.9.RELEASE/b7068d2feeb761a92e387c42bcaeb6863b623064/spring-test-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.1.9.RELEASE/23badf273ec13745db1ecf5f997063a3b0a7a76f/spring-test-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.0/269015b94ba42a599506d2a227daef40e856ba90/mockito-core-1.9.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.0/1b2360734c0b7ed584cdff780d753405780598a8/mockito-core-1.9.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.9.RELEASE/eca19098b18a69826743e7604e330021b143ad74/spring-web-4.1.9.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.9.RELEASE/3016ea9912a6fa37a8b181887019c1c9fac06e9c/spring-web-4.1.9.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-js-resources/2.4.1.RELEASE/f84a3444dcdfcb55bceb22d1fa4fb9eff1edfe8c/spring-js-resources-2.4.1.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/opensymphony/ognl/2.6.11/12dfc2019d4ce5a30a48292f04f779074817bc1b/ognl-2.6.11-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/opensymphony/ognl/2.6.11/c3f31f4a65461c44e6697bf29070e638bef09d8/ognl-2.6.11.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-binding/2.4.1.RELEASE/6709c9e799cfe70aa69d38c0fbd03f12ca2e8c00/spring-binding-2.4.1.RELEASE-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.springframework.webflow/spring-binding/2.4.1.RELEASE/522ff71c8d9c05e9c91be603ccda6063beb5c6f5/spring-binding-2.4.1.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-api/1.0.6/7e280cbfd3218b0fcbd5b48729cf0c9fed9a8edb/tiles-request-api-1.0.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-api/1.0.6/159cd498ce20e904516e0cad7f0c2fd9f729e746/tiles-request-api-1.0.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.0/abc81a9857b4d396ec8093f023f42e06b01e975a/commons-digester-2.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.0/3dbd8a76683cd563583a2c78c356ad8b8acf38bf/commons-digester-2.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-servlet/3.0.5/a3e3960e3d6415fd737ba033cdd09b84adf7fa18/tiles-servlet-3.0.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-servlet/3.0.5/d7f38534b86ab8c35e163ee91945e3c70e0d054b/tiles-servlet-3.0.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-template/3.0.5/f81686dd6883c6a428bedf47ef02a35a9b64d3b2/tiles-template-3.0.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-template/3.0.5/f16a28940ee4e4f73c17727f44a84278fa52767/tiles-template-3.0.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-jsp/1.0.6/5bc99239d19d08b2c6bf794270f6207d76cd38de/tiles-request-jsp-1.0.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-jsp/1.0.6/ab15a6139647490e56eedcfce45e0f0cb5b32f85/tiles-request-jsp-1.0.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.2/96d156244c8caca49b6db147c66e4d8ed6b244f2/commons-pool2-2.2-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.2/bd1a6e384f3cf0f9b9a60e1e6c1c1ecbbee7e0b7/commons-pool2-2.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/1b0aa62a6a91e9fa00c16f0a4a2c874804ed3b1e/httpcore-4.3.3-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.1/171e4563feb5bf66ef790a8e679557a03b378f8e/log4j-api-2.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.1/588c32c91544d80cc706447aa2b8037230114931/log4j-api-2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.1/1c9e754118cf8d3d85b6b1257fb6fb0f914d08c6/jsp-api-2.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.1/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.0.GA/119d7007b7459ddfd016fc0977b9a07f53d24b3d/jboss-logging-3.1.0.GA-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.1.0.GA/c71f2856e7b60efe485db39b37a31811e6c84365/jboss-logging-3.1.0.GA.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d8d089f3a8845cce22d3006e02ab1403dd73b5b6/javassist-3.18.1-GA-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/1cb80abf6f58f6091944060d50b1dbad050d1962/jboss-transaction-api_1.1_spec-1.0.1.Final-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/18f0e1d42f010a8b53aa447bf274a706d5148852/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/7ff871e9a45b6b271237cf236c76e5f50b1dc815/hibernate-commons-annotations-4.0.2.Final-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/94edcc5572efb02e123cc9ef7ad7d0fa5f76cf/hibernate-commons-annotations-4.0.2.Final.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.khronos/opengl-api/gl1.1-android-2.1_r1/3d04a959a571d615f4c96a7dd954af18df9da799/opengl-api-gl1.1-android-2.1_r1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.khronos/opengl-api/gl1.1-android-2.1_r1/8827d279add29cf9115820671e7879de7bf80390/opengl-api-gl1.1-android-2.1_r1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/xerces/xmlParserAPIs/2.6.2/65acede1e5305bd2b92213d7b5761328c6f4fd9/xmlParserAPIs-2.6.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/xpp3/xpp3/1.1.4c/8dd0ddee19fe6ed0182b18e0e621d1c8b4d8d56/xpp3-1.1.4c-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/xpp3/xpp3/1.1.4c/9b988ea84b9e4e9f1874e390ce099b8ac12cfff5/xpp3-1.1.4c.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/19c6d8dee6803c520d855ff7e8a8c3d97f1271ec/json-simple-1.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.0/b10c90e57b7bb985a7b6a704769428fe5c2a732c/objenesis-1.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.0/9b473564e792c2bdf1449da1f0b1b5bff9805704/objenesis-1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-servlet/1.0.6/fad25c2d79adb009a52551d43d1b1ac1de3b9355/tiles-request-servlet-1.0.6-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-servlet/1.0.6/5558c703634ebf7cf47af2d2a50245eecee9ad74/tiles-request-servlet-1.0.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-autotag-core-runtime/1.1.0/42692b999acc1f5d05f5af59af124c948d8cd048/tiles-autotag-core-runtime-1.1.0-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-autotag-core-runtime/1.1.0/1fb6109d5bc35c7403a55d019e0e8cf8ec06b49e/tiles-autotag-core-runtime-1.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/fa095ef874374e5b2a11f8b06c26a5d68c7cb3a4/commons-collections-3.2.1-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.7/2c276bb839d67f39766342cf77ea799da72ea323/aspectjweaver-1.8.7-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.7/f753e78bbe484e58b3b4e5ce3cc1751e50d11f6c/aspectjweaver-1.8.7.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="C:/Users/soldesk/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+</classpath>

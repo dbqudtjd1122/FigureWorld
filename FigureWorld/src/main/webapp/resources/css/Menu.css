@@ -1,0 +1,202 @@
+#topMenu {
+    /*topMenu의 ID를 가진 태그의 스타일 지정 */
+    height: 50px;
+    /* topMenu의 높이를 30px로 설정(제대로 설정 안하면 아래 내용이 깨짐) */
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+#topMenu ul li ul li{ /*서브메뉴*/
+    background-color: #ddf2ff;
+}
+
+#topMenu ul li{ /*메인메뉴*/
+    /* topMenu의 ID를 가진 태그 안에 <ul> 태그 안에 <li> 태그의 스타일을 지정*/
+    list-style: none;
+    /* <li> 태그는 위의 이미지처럼 목록을 나타내는 점을 없앤다 */
+    color: black;
+    /* 글씨 색을 흰색으로 설정 */
+    /*background-color: #2d2d2d;*/
+    background-color: white;
+    /* 배경색을 진한 회색(RGB(2D,2D,2D)으로 설정 */
+    float: left;
+    /* <li>태그들이 왼쪽에 흐르게 설정(그러면 아래있는 내용은 오른쪽으로 옴) */
+    line-height: 50px;
+    /* 글씨가 가운데로 오도록 설정하기 위해 한줄의 높이를 30px로 설정 */
+    vertical-align: middle;
+    /* 세로 정렬을 가운데로 설정(위의 line-height와 같이 설정 필요함) */
+    text-align: center;
+    /* 글씨 정렬을 가운데로 설정*/
+}
+
+#topMenu .menuLink {
+    /* topMenu 아이디를 가진 태그 안에 있는 menuLink 클래스 태그들의 스타일 설정 */
+    text-decoration: none;
+    /* 링크(<a> 태그)가 가지는 기본 꾸밈 효과(밑줄 등)을 없앰 */
+    color: black;
+    /* 폰트색을 흰색으로 설정 */
+    display: block;
+    /* 링크를 글씨가 있는 부분 뿐만아니라 전체 영역을 클릭해도 링크가 걸리게 설정 */
+    width: 160px;
+    /* 메뉴링크의 넓이 설정 */
+    font-size: 14px;
+    /* 폰트 사이즈 12px로 설정 */
+    /*font-weight: bolder;*/
+    /* 폰트를 굵게*/
+    font-family: "Trebuchet MS", Dotum, Arial;
+    /*기본 폰트 적용, 시스템 폰트를 종류별로 순서대로*/
+    z-index: 4;
+}
+
+
+.topFixed2 {
+	width: 100%;
+    /* width: 1400px; */
+    /*스크롤 내려도 고정시키기 위함*/
+    position: fixed;
+    top: 50px;
+    z-index: 2;
+}
+
+#total_menu{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: table;
+}
+
+ul #total_menu,
+li .menuLink{
+    list-style: none;
+    /* padding: 15 5px; */
+    width: 170px;
+}
+
+/* #nav li.menuLink {
+    margin: 0;
+    padding: 5 10px;
+    float: left;
+    width: 50px;
+    border: 1px #0000ff solid;
+    height: 20px;
+}
+ */
+* html #nav li.menuLink {
+    width: 200px;
+}
+
+.localNav li {
+    
+    width: 155px;
+}
+
+.localNav {
+    display: none;
+    position: absolute;
+    top: 35px;
+    /* border: 1px solid #000000; */
+    /*background-color: orange;*/
+    z-index: 1;
+}
+
+/*================== page_list_click=================*/
+ul #total_menu,
+li .menuLink
+
+#menuLink a,
+.localNav li a{
+	font-family: "Gulim";
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#menuLink a:link,
+.localNav li a:link {
+    font-family: "Gulim";
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#menuLink a:active,
+.localNav li a:active {
+    font-family: "Gulim";
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#menuLink a:visited,
+.localNav li a:visited {
+    font-family: "Gulim";
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#menuLink a:hover,
+.localNav li a:hover {
+    /*서브메뉴 커서 올릴시*/
+    font-family: "Gulim";
+    font-size: 13px;
+    text-decoration: underline;
+    color: rgb(40, 72, 255);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*==============탑 메뉴 배너(로그인 회원가입 등등)==============*/
+.topBanner {
+    text-align: right;
+    /*background-color: rgb(194, 255, 245);*/
+    background-color: rgb(233, 233, 233);
+    padding: 10px 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    z-index: 3;
+}
+
+.topFixed {
+    /*스크롤 내려도 고정시키기 위함*/
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.topBanner_in:hover {
+    /*커서 올라갈시*/
+    text-decoration: underline;
+    /*밑줄*/
+    font-weight: bolder;
+    /*굵게*/
+    cursor: pointer;
+    /*손가락 모양 표시*/
+}
+/* =======================  */
+
+
+#Screen {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    width: 1400px;
+}
+
+ul div {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100%;
+    width: 0;
+    padding: 3px 15px;
+    background-color: rgb(70, 206, 230);
+    border-radius: 25px;
+    z-index: -1;
+}
